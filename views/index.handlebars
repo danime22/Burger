@@ -1,0 +1,177 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <header>
+                <div>
+                    <h1><img src="./assets/img//angel.jpeg" alt="angel wings" height="100" width="100">Victoria's
+                        Secret Angels</h1>
+                </div>
+            </header>
+            <div class="card text-center">
+
+                <div class="card-body">
+
+                    <h2 class="card-title">MEET <span>THE ANGELS</span></h2>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img/candace-swanpoel.jpg" alt="Candice Swanpoel"
+                                    height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/candice-swanepoel">Candice
+                                        Swanepoel</a></p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//adriana-lima-1-2000.jpg" alt="Adriana Lima"
+                                    height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/adriana-lima">Adriana
+                                        Lima
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//242521-alessandra-ambrosio-victoria-s-secret-950x0-3.jpg"
+                                    alt="Alessandra Ambrosio" height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/alessandra-ambrosio">Alessandra
+                                        Ambrosio
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//college_living_elsa_hosk_intervew_beauty_style_makup_diet_workout.jpg"
+                                    alt="Elsa Hosk" height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/elsa-hosk">Elsa
+                                        Hosk
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//modelheadshot.jpg" alt="Jasmine Tookes"
+                                    height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/jasmine-tookes">Jasmine
+                                        Tookes
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//martha-hunt-at-2014-victoria-s-secret-fashion-show-runway_1.jpg"
+                                    alt="Martha Hunt" height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/martha-hunt">Martha
+                                        Hunt
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//0446d7b93abeb96a96eff1d905b6e0dc.jpg" alt="Taylor Hill"
+                                    height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/taylor-hill">Taylor
+                                        Hill
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//stella-maxwell-at-2016-victoria-s-secret-fashion-show-in-paris_1.jpg"
+                                    alt="Stella Maxwell" height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/stella-maxwell">Stella
+                                        Maxwell
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//sara-sampaio-runway-700_0.jpg" alt="Sara Sampaio"
+                                    height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/sara-sampaio">Sara
+                                        Sampaio
+                                    </a></p>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="im1">
+                                <img class="content1" src="./assets/img//Josephine-Skriver_-2017-Victorias-Secret-Fashion-Show-Runway--03-662x993.jpg"
+                                    alt="Josephine Skriver" height="170" width="150">
+
+                                <p class="papa"><a href="https://www.victoriassecret.com/vsallaccess/angels/josephine-skriver">Josephine
+                                        Skriver
+                                    </a></p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <div class="row">
+
+
+                        <div class="col">
+                            <h2>Angels have not met</h2>
+                            <ul>
+                                {{#each angels}}
+                                {{#unless met}}
+                                {{>angels/angel-block met=false}}
+                                {{!-- {{angel_name}} --}}
+                                {{/unless}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="col">
+
+                            <h2>Angels have met</h2>
+                            <ul>
+                                {{#each angels}}
+                                {{#if met}}
+                                {{>angels/angel-block met=true}}
+                                {{!-- {{angel_name}} --}}
+                                {{/if}}
+                                {{/each}}
+                            </ul>
+
+                        </div>
+                    </div>
+                    <h2>Add an Angel</h2>
+                    <form class="create-form">
+
+                        <div class="form-group">
+                            <label for="ca">Angel Name:</label>
+                            <input type="text" id="ca" name="name">
+                        </div>
+
+
+                        <button type="submit">Add Angel</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

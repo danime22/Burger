@@ -1,0 +1,9 @@
+INSERT INTO angels (angel_name, met) VALUES ("Candice Swanepoel", true);
+INSERT INTO angels (angel_name, met) VALUES ("Taylor Hill", false);
+INSERT INTO angels (angel_name, met) VALUES ("Jasmine Tookes", true);
+INSERT INTO angels (angel_name, met) VALUES ("Sara Sampaio", false);
+INSERT INTO angels (angel_name, met) VALUES ("Stella Maxwell", true);
+INSERT INTO angels (angel_name, met) VALUES ("Lais Ribeiro", false);
+INSERT INTO angels (angel_name, met) VALUES ("Martha Hunt", true);
+INSERT INTO angels (angel_name, met) VALUES ("Romee Strijd", false);
+INSERT INTO angels (angel_name, met) VALUES ("Elsa Hosk", false);

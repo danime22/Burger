@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS angel_vs;
+CREATE DATABASE angel_vs;
+USE angel_vs;
+
+
+CREATE TABLE angels
+(
+
+id INT NOT NULL AUTO_INCREMENT,
+angel_name VARCHAR(200),
+met BOOLEAN,
+
+PRIMARY KEY(id)
+
+);

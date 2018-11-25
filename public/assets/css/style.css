@@ -1,0 +1,42 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  body {
+    background-color: pink;
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    color: #FF1493;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Yeseva One', cursive;
+}
+
+span {
+    color: #FF1493;
+}
