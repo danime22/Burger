@@ -1,6 +1,6 @@
 $(function () {
     $(".angel-met").on("click", function (event) {
-     alert("hey");
+
       var id = $(this).data("id");
       var newMet = $(this).data("newangel");
   
@@ -22,7 +22,7 @@ $(function () {
     });
   
     $(".create-form").on("submit", function (event) {
-     alert("angel");
+
       event.preventDefault();
   
       var newAngel = {

@@ -1,11 +1,42 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Alice', serif;
+
   }
+
+  img {
+      border-radius: 40px;
+  }
+
+  input {
+      text-align: center;
+      height: 40px;
+      width: 301px;
+      border-radius: 10px;
+  }
+  .card-body{
+      /* background-color: black; */
+      background: 	rgb(14,17,17)
+  }
+ .angel-met {
+     color: red;
+     text-align: center;
+     border-radius: 10px;
+     width: 136px;
+     height: 38px;
+     font-weight: bold;
+ }
   
+  #meet {
+      color: #F7F7F8;
+  }
   .label {
     font-weight: bold;
+  
   }
   
   .create-update-form {
@@ -34,6 +65,7 @@ h1 {
 }
 
 h2 {
+    color: #F7F7F8;
     font-family: 'Yeseva One', cursive;
 }
 
