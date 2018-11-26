@@ -12,6 +12,15 @@ li {
       border-radius: 40px;
   }
 
+  button {
+      margin-left: 10px;
+  }
+
+  hr {
+      size: 20px;
+      height: 5px;
+  }
+
   input {
       text-align: center;
       height: 40px;
