@@ -5,7 +5,7 @@ var router = express.Router();
 var angel = require("../models/angel.js");
 
 router.get("/", function(req, res) {
-  angel.all(function(data) {
+  angel.selectAll(function(data) {
     var hbsObject = {
       angels: data
     };
@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/angels", function(req, res) {
   console.log(req.body.name);
-  angel.create([
+  angel.insertOne([
     "angel_name", "met"
   ], [
     req.body.name, 0
@@ -31,7 +31,7 @@ router.put("/api/angels/:id", function(req, res) {
 
   console.log("condition " + condition);
   console.log(req.body.met);
-  angel.update({
+  angel.updateOne({
     met: req.body.met
   }, condition, function(result) {
     if (result.changedRows == 0) {
